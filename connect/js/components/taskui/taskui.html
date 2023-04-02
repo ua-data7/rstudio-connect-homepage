@@ -1,0 +1,5 @@
+<!-- The ng-hide class seems to prevent the UI from flashing on during page load -->
+<div data-automation="taskui" class="rsc-alert {{taskui.alertClass}} animate-hide ng-hide" ng-show="taskui.show">
+    <button data-automation="taskui-close" type="button" class="rsc-alert__close" ng-click="taskui.dismiss(true);">&times;</button>
+    <span data-automation="taskui-message">{{taskui.message}}</span>
+</div>
